@@ -10,8 +10,16 @@
 <body>
     <script>
         let str = "shubham";
+        // convert string to array
+        let spliceex = str.split("h");
+        console.log(str);
         console.log(str.__proto__);
-        console.log(str.split("h"))
+        console.log("length: ", str.length);
+        console.log("split: ", str.split("h"));
+        console.log("substring: ", str.substring(1, 4));
+        console.log("includes method: ", str.includes("s"));
+        console.log("slice: ", str.slice(1, -1));
+        console.log("splice: ", spliceex.splice(1));    
     </script>
 </body>
 
