@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:white;">
+  <!-- <div id="parent">
+  <button id="child">Click Me</button>
+</div> -->
+
+<ul id="list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+ <script>
+//  document.getElementById('parent').addEventListener('click', function (event) {
+//     console.log("Current Target:", event); // Always logs #parent
+//   });
+//    function toggleBackground(event){
+//     console.log(event)
+//     //   let body = document.getElementById('body');
+//     //   body.style.backgroundColor = 
+//     document.body.style.backgroundColor = document.body.style.backgroundColor == 'black' ? 'white' : 'black';
+//     }
+
+      document.getElementById('list').addEventListener('click', function (event) {
+    // console.log("Target:", event.target);         // Logs <li> clicked
+    console.log("CurrentTarget:", event.currentTarget); // Always logs <ul>
+  });
+ </script>
+</body>
+</html>
